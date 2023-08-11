@@ -1,38 +1,175 @@
-.App {
-  text-align: center;
-}
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  color:black;
+  padding-left: 0.25%;
+  padding-right: 0.25%;
+} 
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contents {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/*Header*/
+h1 {
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.contents .left-part h2 {
+  padding-top: 2%;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contents .right-part h2 {
+  padding-top: 1%;
+  text-align: center;
 }
+
+/*Left part of the page*/
+.contents .left-part {
+  width: 35%;
+  background-color: white;
+  border-radius: 15px;
+  padding-bottom: 5px;
+  padding-top: 5px; 
+}
+.contents .left-part:hover {
+  box-shadow: 0.3px 0.3px 3px 3px #929597;
+}
+input {
+  padding-left: 1%;
+  width: 97%;
+  line-height: 2rem;
+  border-radius: 8px;
+  background-color: white;
+}
+input:hover {
+  box-shadow: 0.1px 0.1px 2px 2px #c7c8c9;
+}
+#file {
+  background-color: white;
+}
+
+.myForm {
+  padding-left: 1%;
+  
+}
+.myForm label {
+  font-size: 150%;
+}
+.photo input:hover {
+  box-shadow: 0.1px 0.1px 2px 2px white;
+}
+.myForm .sex-select select {
+  margin:2%;
+  font-size:100%;
+  border-radius: 8px;
+  border-width: 2px;
+  border-color: rgb(88, 87, 87);
+}
+.myForm .sex-list:hover {
+  box-shadow: 0.1px 0.1px 2px 2px #c7c8c9;
+}
+.submit-input {
+  padding-bottom: 2%;
+}
+
+/*Middle part*/
+.contents .middle-part {
+  padding-left: 1%;
+}
+
+/*Right part*/
+.contents .right-part {
+  width: 60rem;
+  background-color: white;
+  border-radius: 15px;
+  padding-left: 1%;
+  padding-right: 1.5%;
+}
+
+.contents .right-part:hover {
+  box-shadow: 0.3px 0.3px 3px 3px #929597;
+}
+
+table,
+tr,
+th,
+td {
+  border: 0.5px solid black;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.table-first-line th, tr,td {
+  padding: 7px;
+}
+
+.div-table {
+  padding-top: 1.5rem;
+  padding-left: 1%;
+  padding-right: 0%;
+}
+
+thead .table-first-line .first-name-cell {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+thead .table-first-line .last-name-cell {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}  
+
+thead .table-first-line .email-cell {
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+thead .table-first-line .birthday-cell {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+thead .table-first-line .sex-cell {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+thead .table-first-line .delete-cell {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.filter-search {
+  padding-left: 0.7%;
+}
+
+.filter-search input {
+  padding-left: 1%;
+  width: 100%;
+}
+
+.filter-search input:hover {
+  box-shadow: 0.2px 0.2px 2px 2px #b9b9b9;;
+}
+
+.right-part .filter-search label {
+  display: block;
+  padding-bottom: 1%;
+}
+.sort-select {
+  display:flex;
+  padding-left: 0.7%;
+}
+
+.sort-select label {
+  padding-right: 1%;
+}
+
+
